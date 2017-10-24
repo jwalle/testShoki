@@ -8,7 +8,7 @@ import style from './Styles/style.js';
 
 const Tabs = TabNavigator({
 	Profil: {screen: Profile},
-	Gallery: {screen: Gallery},
+	Galerie: {screen: Gallery},
 	Todo: {screen: TdList}
 });
 

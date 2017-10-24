@@ -1,3 +1,7 @@
+import {Dimensions} from 'react-native';
+
+const {height} = Dimensions.get('window');
+
 export default {
 	tabs: {
 		flex: 1
@@ -31,5 +35,9 @@ export default {
 	describeText: {
 		marginLeft: 10,
 		fontSize: 14
+	},
+	image: {
+		height: height / 3,
+		resizeMode: 'cover'
 	}
 };
