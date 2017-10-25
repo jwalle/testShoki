@@ -1,6 +1,6 @@
 import {Dimensions} from 'react-native';
 
-const {height} = Dimensions.get('window');
+const {height, width} = Dimensions.get('window');
 
 export default {
 	tabs: {
@@ -37,7 +37,49 @@ export default {
 		fontSize: 14
 	},
 	image: {
+		width,
 		height: height / 3,
 		resizeMode: 'cover'
+	},
+	container: {
+		flex: 1,
+		backgroundColor: '#fff',
+		alignItems: 'center',
+		justifyContent: 'center'
+	},
+	todoItem: {
+		backgroundColor: '#FF795A',
+		paddingHorizontal: 20,
+		paddingVertical: 10,
+		borderBottomWidth: 1,
+		borderWidth: 0,
+		borderBottomColor: '#000'
+	},
+	todoTitle: {
+		color: '#000',
+		fontSize: 20,
+		paddingLeft: 20
+	},
+	todoTop: {
+		flex: 1,
+		flexDirection: 'row',
+		alignItems: 'center'
+	},
+	todoText: {
+		color: '#fff',
+		fontSize: 16
+	},
+	modalInput: {
+		fontSize: 20,
+		padding: 20
+	},
+	modal: {
+		backgroundColor: '#ff553e',
+		padding: 20,
+		height: height / 3
+	},
+	modalBtn: {
+		MarginVertical: 50,
+		MarginHorizontal: 20
 	}
 };
